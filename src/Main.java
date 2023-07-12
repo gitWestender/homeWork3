@@ -3,6 +3,7 @@ public class Main {
         tak1();
     }
     public static void tak1(){
+        System.out.println("Задача 1:");
         int a = Integer.MAX_VALUE;
         byte b = Byte.MAX_VALUE;
         short c = Short.MAX_VALUE;
