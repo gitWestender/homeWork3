@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
 
     public static void tak1() {
@@ -62,5 +63,16 @@ public class Main {
 
         timeOfWork *= 10; // Предположим что в месяце 30 дней
         System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute * timeOfWork) + " штук бутылок\n");
+    }
+
+    public static void task5() {
+        System.out.println("Задача 5:");
+        byte classes;
+        byte tinsOfPaint = 120;
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass = 4;
+
+        classes = 4; //задаем количество классов в школе
+        System.out.println("В школе, где " + classes + " классов, нужно " + (classes * whitePaintPerClass) + " банок белой краски и " + (classes * brownPaintPerClass) + " банок кориченовой краски\n");
     }
 }
