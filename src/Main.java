@@ -3,6 +3,7 @@ public class Main {
         tak1();
         task2();
         task3();
+        task4();
     }
 
     public static void tak1() {
@@ -43,5 +44,23 @@ public class Main {
         int result = sheetsOfPaper/(studentsOfAnna+studentsOfEkaterina+studentsOfLudmila);
 
         System.out.println("На каждого ученика рассчитано " + result+" листов бумаги\n");
+    }
+
+    public static void task4(){
+        System.out.println("Задача 4:");
+        int bouttlesPerMinute = 8;
+        int timeOfWork;
+
+        timeOfWork = 20;
+        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute*timeOfWork) + " штук бутылок");
+
+        timeOfWork = 24*60;
+        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute*timeOfWork) + " штук бутылок");
+
+        timeOfWork *=3;
+        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute*timeOfWork) + " штук бутылок");
+
+        timeOfWork *=10; // Предположим что в месяце 30 дней
+        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute*timeOfWork) + " штук бутылок\n");
     }
 }
