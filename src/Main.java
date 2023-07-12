@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void tak1() {
@@ -74,5 +75,19 @@ public class Main {
 
         classes = 4; //задаем количество классов в школе
         System.out.println("В школе, где " + classes + " классов, нужно " + (classes * whitePaintPerClass) + " банок белой краски и " + (classes * brownPaintPerClass) + " банок кориченовой краски\n");
+    }
+
+    public static void task6() {
+        System.out.println("Задача 6:");
+        byte weightOfBanana = 80;
+        byte volumeOfMilk = 105;
+        byte weightOfIceCream = 100;
+        byte weightOfEgg = 70;
+
+        int recipeInGrams = (5 * weightOfBanana) + (2 * volumeOfMilk) + (2 * weightOfIceCream) + (4 * weightOfEgg);
+        System.out.println("Вес спортивного завтракав в граммах равен " + recipeInGrams);
+
+        float recipeInKilograms = recipeInGrams/1000f;
+        System.out.println("Вес спортивного завтракав в киллограммах равен " + recipeInKilograms + "\n");
     }
 }
