@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void tak1() {
@@ -89,5 +90,21 @@ public class Main {
 
         float recipeInKilograms = recipeInGrams/1000f;
         System.out.println("Вес спортивного завтракав в киллограммах равен " + recipeInKilograms + "\n");
+    }
+
+    public static void task7(){
+        System.out.println("Задача 7:");
+        byte kgToGo = 7;
+        short minWeight = 250;
+        short maxWeight = 500;
+
+        float daysOnMin = 7 / (minWeight/100f);
+        float daysOnMax = 7 / (maxWeight/100f);
+
+        float averageDays = (daysOnMin+daysOnMax) / 2;
+
+        System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то достигнет результат за " + daysOnMin + " дней.");
+        System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то достигнет результат за " + daysOnMax + " дней.");
+        System.out.println("В среднем потребуется " + averageDays + " дней\n");
     }
 }
