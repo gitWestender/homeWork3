@@ -34,33 +34,33 @@ public class Main {
         System.out.println(); // строка для лучшей читаемости вывода
     }
 
-    public static void task3(){
+    public static void task3() {
         System.out.println("Задача 3:");
         byte studentsOfLudmila = 23;
         byte studentsOfAnna = 27;
         byte studentsOfEkaterina = 30;
         short sheetsOfPaper = 480;
 
-        int result = sheetsOfPaper/(studentsOfAnna+studentsOfEkaterina+studentsOfLudmila);
+        int result = sheetsOfPaper / (studentsOfAnna + studentsOfEkaterina + studentsOfLudmila);
 
-        System.out.println("На каждого ученика рассчитано " + result+" листов бумаги\n");
+        System.out.println("На каждого ученика рассчитано " + result + " листов бумаги\n");
     }
 
-    public static void task4(){
+    public static void task4() {
         System.out.println("Задача 4:");
         int bouttlesPerMinute = 8;
         int timeOfWork;
 
         timeOfWork = 20;
-        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute*timeOfWork) + " штук бутылок");
+        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute * timeOfWork) + " штук бутылок");
 
-        timeOfWork = 24*60;
-        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute*timeOfWork) + " штук бутылок");
+        timeOfWork = 24 * 60;
+        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute * timeOfWork) + " штук бутылок");
 
-        timeOfWork *=3;
-        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute*timeOfWork) + " штук бутылок");
+        timeOfWork *= 3;
+        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute * timeOfWork) + " штук бутылок");
 
-        timeOfWork *=10; // Предположим что в месяце 30 дней
-        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute*timeOfWork) + " штук бутылок\n");
+        timeOfWork *= 10; // Предположим что в месяце 30 дней
+        System.out.println("За " + timeOfWork + " минут машина произвела " + (bouttlesPerMinute * timeOfWork) + " штук бутылок\n");
     }
 }
