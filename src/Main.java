@@ -13,7 +13,7 @@ public class Main {
         float x = Float.MAX_VALUE;
         double y = Double.MAX_VALUE;
 
-        System.out.println("Значение переменной \"a\" с типом \"int\" равно " + a);
+        System.out.println("Значение переменной \"a\" с типом \"int\" равно " + a); // здесь и далее двойная кавычка заэкранирована
         System.out.println("Значение переменной \"b\" с типом \"byte\" равно " + b);
         System.out.println("Значение переменной \"c\" с типом \"short\" равно " + c);
         System.out.println("Значение переменной \"d\" с типом \"long\" равно " + d);
@@ -29,5 +29,6 @@ public class Main {
         long d = 987678965549l;
         float x = 2.786f;
         double y = 27.12;
+        System.out.println(); // строка для лучшей читаемости вывода
     }
 }
