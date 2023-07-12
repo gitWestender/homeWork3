@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         tak1();
         task2();
+        task3();
     }
 
     public static void tak1() {
@@ -30,5 +31,17 @@ public class Main {
         float x = 2.786f;
         double y = 27.12;
         System.out.println(); // строка для лучшей читаемости вывода
+    }
+
+    public static void task3(){
+        System.out.println("Задача 3:");
+        byte studentsOfLudmila = 23;
+        byte studentsOfAnna = 27;
+        byte studentsOfEkaterina = 30;
+        short sheetsOfPaper = 480;
+
+        int result = sheetsOfPaper/(studentsOfAnna+studentsOfEkaterina+studentsOfLudmila);
+
+        System.out.println("На каждого ученика рассчитано " + result+" листов бумаги\n");
     }
 }
