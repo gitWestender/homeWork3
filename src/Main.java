@@ -70,13 +70,18 @@ public class Main {
 
     public static void task5() {
         System.out.println("Задача 5:");
-        byte classes;
+        int classes;
+        int tinsOfWhite;
+        int tinsOfBrown;
         byte tinsOfPaint = 120;
         byte whitePaintPerClass = 2;
         byte brownPaintPerClass = 4;
 
-        classes = 4; //задаем количество классов в школе
-        System.out.println("В школе, где " + classes + " классов, нужно " + (classes * whitePaintPerClass) + " банок белой краски и " + (classes * brownPaintPerClass) + " банок кориченовой краски\n");
+        classes = tinsOfPaint / (whitePaintPerClass + brownPaintPerClass); // узнаем количество классов в школе
+        tinsOfWhite = classes * whitePaintPerClass;
+        tinsOfBrown = classes * brownPaintPerClass;
+
+        System.out.println("В школе, где " + classes + " классов, нужно " + tinsOfWhite + " банок белой краски и " + tinsOfBrown + " банок кориченовой краски\n");
     }
 
     public static void task6() {
@@ -87,29 +92,29 @@ public class Main {
         byte weightOfEgg = 70;
 
         int recipeInGrams = (5 * weightOfBanana) + (2 * volumeOfMilk) + (2 * weightOfIceCream) + (4 * weightOfEgg);
-        System.out.println("Вес спортивного завтракав в граммах равен " + recipeInGrams);
+        System.out.println("Вес спортивного завтрака в граммах равен " + recipeInGrams);
 
-        float recipeInKilograms = recipeInGrams/1000f;
-        System.out.println("Вес спортивного завтракав в киллограммах равен " + recipeInKilograms + "\n");
+        float recipeInKilograms = recipeInGrams / 1000f;
+        System.out.println("Вес спортивного завтрака в киллограммах равен " + recipeInKilograms + "\n");
     }
 
-    public static void task7(){
+    public static void task7() {
         System.out.println("Задача 7:");
         byte kgToGo = 7;
         short minWeight = 250;
         short maxWeight = 500;
 
-        float daysOnMin = 7 / (minWeight/100f);
-        float daysOnMax = 7 / (maxWeight/100f);
+        float daysOnMin = 7 / (minWeight / 100f);
+        float daysOnMax = 7 / (maxWeight / 100f);
 
-        float averageDays = (daysOnMin+daysOnMax) / 2;
+        float averageDays = (daysOnMin + daysOnMax) / 2;
 
         System.out.println("Если спортсмен будет терять каждый день по 250 грамм, то достигнет результат за " + daysOnMin + " дней.");
         System.out.println("Если спортсмен будет терять каждый день по 500 грамм, то достигнет результат за " + daysOnMax + " дней.");
         System.out.println("В среднем потребуется " + averageDays + " дней\n");
     }
 
-    public static void task8(){
+    public static void task8() {
         System.out.println("Задача 8:");
         int mashaSalary = 67760;
         int denisSalary = 83690;
