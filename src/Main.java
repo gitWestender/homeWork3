@@ -91,7 +91,12 @@ public class Main {
         byte weightOfIceCream = 100;
         byte weightOfEgg = 70;
 
-        int recipeInGrams = (5 * weightOfBanana) + (2 * volumeOfMilk) + (2 * weightOfIceCream) + (4 * weightOfEgg);
+        byte quantOfBananas = 5;
+        short quantOfMilk = 200;
+        byte quantOfIceCream = 2;
+        byte quantOfEggs = 4;
+
+        int recipeInGrams = quantOfBananas * weightOfBanana + ((quantOfMilk * volumeOfMilk) / 100) + quantOfIceCream * weightOfIceCream + quantOfEggs * weightOfEgg;
         System.out.println("Вес спортивного завтрака в граммах равен " + recipeInGrams);
 
         float recipeInKilograms = recipeInGrams / 1000f;
@@ -104,8 +109,8 @@ public class Main {
         short minWeight = 250;
         short maxWeight = 500;
 
-        float daysOnMin = 7 / (minWeight / 100f);
-        float daysOnMax = 7 / (maxWeight / 100f);
+        float daysOnMin = 7 / (minWeight / 1000f);
+        float daysOnMax = 7 / (maxWeight / 1000f);
 
         float averageDays = (daysOnMin + daysOnMax) / 2;
 
