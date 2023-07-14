@@ -138,4 +138,5 @@ public class Main {
         System.out.println("Денис теперь получает " + denisTotal + " рублей. Годовой доход вырос на " + denisIncrease + " рублей");
         System.out.println("Кристина теперь получает " + kristeinaTotal + " рублей. Годовой доход вырос на " + kristinaIncrease + " рублей");
     }
+
 }
