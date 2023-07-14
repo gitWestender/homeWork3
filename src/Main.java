@@ -127,8 +127,15 @@ public class Main {
 
         float increase = 0.1f;
 
-        System.out.println("Маша теперь получает " + ((mashaSalary * increase) + mashaSalary) + " рублей. Годовой доход вырос на " + (mashaSalary * increase) + " рублей");
-        System.out.println("Денис теперь получает " + ((denisSalary * increase) + denisSalary) + " рублей. Годовой доход вырос на " + (denisSalary * increase) + " рублей");
-        System.out.println("Кристина теперь получает " + ((kristinaSalary * increase) + kristinaSalary) + " рублей. Годовой доход вырос на " + (kristinaSalary * increase) + " рублей");
+        float mashaIncrease = mashaSalary * increase;
+        float mashaTotal = mashaSalary + mashaIncrease;
+        float denisIncrease = denisSalary * increase;
+        float denisTotal = denisSalary + denisIncrease;
+        float kristinaIncrease = kristinaSalary * increase;
+        float kristeinaTotal = kristinaSalary + kristinaIncrease;
+
+        System.out.println("Маша теперь получает " + mashaTotal + " рублей. Годовой доход вырос на " + mashaIncrease + " рублей");
+        System.out.println("Денис теперь получает " + denisTotal + " рублей. Годовой доход вырос на " + denisIncrease + " рублей");
+        System.out.println("Кристина теперь получает " + kristeinaTotal + " рублей. Годовой доход вырос на " + kristinaIncrease + " рублей");
     }
 }
